@@ -1,0 +1,254 @@
+.icon-svg {
+	font-size: 10px
+}
+.icon-svg:before {
+	content: " ";
+	vertical-align: middle;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: 13em 51.2em
+}
+.icon-svg:before, .no-svg .icon-svg:before {
+	background-image: url(./assets/images/sprite.svg)
+}
+.icon-svg.icon-corner-flag:before {
+	background-position: 0 0;
+	width: 1.5em;
+	height: 2em
+}
+.icon-svg.icon-crosshair:before {
+	background-position: 0 -2em;
+	width: 2.1em;
+	height: 2.1em
+}
+.icon-svg.icon-in:before {
+	background-position: 0 -4.1em;
+	width: .9em;
+	height: 1.2em
+}
+.icon-svg.icon-injury:before {
+	background-position: 0 -5.3em;
+	width: 1.6em;
+	height: 1.6em
+}
+.icon-svg.icon-keepers-glove:before {
+	background-position: 0 -6.9em;
+	width: 1.6em;
+	height: 2.2em
+}
+.icon-svg.icon-offside-flag:before {
+	background-position: 0 -9.1em;
+	width: 2.2em;
+	height: 1.8em
+}
+.icon-svg.icon-out:before {
+	background-position: 0 -10.9em;
+	width: .8em;
+	height: 1.1em
+}
+.icon-svg.icon-red-card:before {
+	background-position: 0 -12em;
+	width: 1.2em;
+	height: 1.6em
+}
+.icon-svg.icon-shirt:before {
+	background-position: 0 -13.6em;
+	width: 3.2em;
+	height: 3.2em
+}
+.icon-svg.icon-shirt-alt:before {
+	background-position: 0 -16.8em;
+	width: 3.2em;
+	height: 3.2em
+}
+.icon-svg.icon-soccer-ball:before {
+	background-position: 0 -20em;
+	width: 1.6em;
+	height: 1.6em
+}
+.icon-svg.icon-soccer-ball-missed-penalty:before {
+	background-position: 0 -21.6em;
+	width: 1.8em;
+	height: 1.8em
+}
+.icon-svg.icon-soccer-ball-own-goal:before {
+	background-position: 0 -23.4em;
+	width: 1.6em;
+	height: 1.6em
+}
+.icon-svg.icon-soccer-ball-penalty:before {
+	background-position: 0 -25em;
+	width: 1.8em;
+	height: 1.8em
+}
+.icon-svg.icon-soccer-gate:before {
+	background-position: 0 -26.8em;
+	width: 13em;
+	height: 12.2em
+}
+.icon-svg.icon-soccer-shoe:before {
+	background-position: 0 -39em;
+	width: 2em;
+	height: 1.7em
+}
+.icon-svg.icon-soccer-shots:before {
+	background-position: 0 -40.7em;
+	width: 1.4906000000000001em;
+	height: 1.638em
+}
+.icon-svg.icon-stopwatch:before {
+	background-position: 0 -42.4em;
+	width: 1.7em;
+	height: 1.9em
+}
+.icon-svg.icon-substitution:before {
+	background-position: 0 -44.3em;
+	width: 1.8em;
+	height: 1.7em
+}
+.icon-svg.icon-trophy:before {
+	background-position: 0 -46em;
+	width: 1.8em;
+	height: 1.9em
+}
+.icon-svg.icon-whistle:before {
+	background-position: 0 -47.9em;
+	width: 1.6em;
+	height: 1.7em
+}
+.icon-svg.icon-yellow-card:before {
+	background-position: 0 -49.6em;
+	width: 1.2em;
+	height: 1.6em
+}
+.isotope-filter {
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0 2px;
+	margin: 0 0 24px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+
+.game-timeline-wrapper {
+	overflow: auto;
+	padding-bottom: 20px
+}
+.card .game-timeline-wrapper {
+	margin-left: -24px;
+	margin-right: -24px
+}
+.game-timeline {
+	position: relative;
+	height: 140px;
+	display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+
+	/* width: 770px; */
+	padding-left: 24px;
+    padding-right: 24px
+}
+.game-timeline:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	height: 1px;
+	background-color: #e4e7ed
+}
+.game-timeline__event {
+	position: relative;
+	text-align: center;
+	display: block;
+	/* width: 60px */
+}
+/* .game-timeline__event--22 {
+	margin-left: 78px
+}
+.game-timeline__event--36 {
+	margin-left: 10px
+}
+.game-timeline__event--ht {
+	margin-left: 82px
+}
+.game-timeline__event--59 {
+	margin-left: 19px
+}
+.game-timeline__event--68 {
+	margin-left: 28px
+}
+.game-timeline__event--84 {
+	margin-left: 67px
+} */
+.game-timeline__team-1, .game-timeline__team-2 {
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%)
+}
+.game-timeline__team-1 {
+	bottom: 87px
+}
+.game-timeline__team-1 .game-timeline__team-shirt {
+	position: relative;
+	top: -12px
+}
+.game-timeline__team-2 {
+	top: 85px
+}
+.game-timeline__team-2 .game-timeline__team-shirt {
+	margin-top: 12px
+}
+.game-timeline__time {
+	width: 26px;
+	height: 26px;
+	border: 1px solid #e4e7ed;
+	border-radius: 50%;
+	background-color: #fff;
+	text-align: center;
+	line-height: 24px;
+	color: #31404b;
+	font-family: Montserrat, sans-serif;
+	font-size: 9px;
+	font-weight: 700;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%)
+}
+.game-timeline__event-info {
+	font-size: 10px;
+	line-height: 1.2em
+}
+.game-timeline__event-name {
+	color: #31404b;
+	line-height: 1.3em
+}
+.game-timeline__event-desc, .game-timeline__event-name {
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	white-space: nowrap
+}
+.game-timeline__event-desc {
+	font-size: 7px;
+	text-transform: uppercase;
+	letter-spacing: -.02em
+}
+.game-result__section--box {
+	display: -ms-flexbox;
+	display: flex;
+	margin-left: -24px;
+	margin-right: -24px;
+	margin-bottom: -24px
+}
+.game-result__item .card__subheader {
+	margin: 0
+}
+.game-result__item .game-result__subtitle {
+	font-style: normal
+}
