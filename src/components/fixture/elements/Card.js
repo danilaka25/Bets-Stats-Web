@@ -18,7 +18,7 @@ const Card = (props) => {
                     </Link>
                 </div>
                 <div className="game-timeline__event-desc">
-                    Assist {props.data.assist.name}
+                     {props.data.detail}
                 </div>
             </div>
              <i class="icon-svg icon-yellow-card"></i>

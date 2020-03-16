@@ -20,12 +20,15 @@ class Player extends React.Component {
       this.state = {
         isReady: false,
         data: [],
-        refreshing: true
+        refreshing: true,
+        TOKEN: 'I4rRUb4Fe8QEoOiu3e7kvXEVLXITMktNf1yR4o5keQdPgtZ8A8ATaMw6kXOM',
+        name: 'J. Chicco'
       };
     }
   
     componentDidMount = () => {  
       this.getPlayerStatistics();
+      this.getPlayerPhotoById(this.state.name);
     }
   
   
@@ -53,15 +56,30 @@ class Player extends React.Component {
         });
     }
 
-
-    renderSwitch(param) {
-      switch(param) {
-        case 'foo':
-          return 'bar';
-        default:
-          return 'foo';
-      }
+//"https://soccer.sportmonks.com/api/v2.0/players/search/__SEARCH__?api_token=YOURTOKEN
+    getPlayerPhotoById = (id) => {
+      fetch(
+        "https://soccer.sportmonks.com/api/v2.0/players/search/" + id + "?api_token=" + this.state.TOKEN, 
+        {
+          method: "GET",
+          headers: {
+            "x-rapidapi-host": "api-football-beta.p.rapidapi.com",
+            "x-rapidapi-key": "360bc2e65dmsh50cec7b50ff31b8p1cfa59jsnff457afc9393"
+          }
+        }
+      )
+        .then(response => response.json())
+        .then(responseJson => {
+          console.log(responseJson);
+          // this.setState({
+          //   data: responseJson.response,
+          // });
+        })
+        .catch(err => {
+          console.log(err);
+        });
     }
+
   
   
     render() {
@@ -80,8 +98,8 @@ class Player extends React.Component {
               <div>{item.player.weight}</div>
               <div>Травмы: {item.player.injured}</div>
   
-              <div class="table-responsive-lg">
-                <table class="table">
+              <div className="table-responsive-lg">
+                <table className="table">
                   <thead>
                     <tr>
                       <th>country</th>
@@ -93,6 +111,7 @@ class Player extends React.Component {
   
                     </tr>
                   </thead>
+                  <tbody>
                   {item.statistics.map(item => (
                     <tr>
                       <td>{item.league.country}</td>
@@ -103,6 +122,7 @@ class Player extends React.Component {
                       <td>{item.team.name}</td>
                     </tr>
                   ))}
+                  </tbody>
                 </table>
               </div>
   

@@ -1,5 +1,35 @@
 
+.countriesList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 
+}
+
+button.itemCountries {
+  display: flex;
+  align-items: center;
+  /* width: 200px; */
+  height: 30px;
+}
+
+button.itemCountries:hover {
+  background: #ccc;
+}
+
+button.itemCountries.clicked-country , button.itemLeague.clicked-league {
+  background: blue;
+  color: #fff;
+}
+
+.country_name {
+  display: none;
+}
+
+.leaguesList {
+  display: flex;
+  flex-direction: column;
+}
 
 .team_home {
   
@@ -16,6 +46,7 @@
 
 .country_flag {
   width: 20px;
+  /* margin-right: 10px; */
 }
 
 .timeline_wrapper {
